@@ -1,0 +1,9 @@
+dataset: PROTEINS
+graph_index: 0
+hash_method: md5
+max_itr: 10
+all_iterations: false
+mode: train
+embedding_dim: 32
+epochs: 50
+encoding_type: NormalizedValue
