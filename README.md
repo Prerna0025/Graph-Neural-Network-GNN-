@@ -124,6 +124,16 @@ python wl_main.py --dataset PROTEINS --graph_index 0 --hash_method sha1 --encodi
 ---
 
 ## 🖼️ Example Output
+Sample Output (PROTEINS Dataset)
+
+![WL Graph Embedding - PROTEINS](./outputs/graph_train_20250418_205011.png)
+
+In the above image:
+
+- Nodes are **colored based on structural similarity**, as determined by the **1-WL (Weisfeiler-Lehman) label hashing** process.
+- The image was generated from the **PROTEINS** dataset using the Weisfeiler-Lehman relabeling technique.
+- Labels are then embedded using **PyTorch**, either via **one-hot encoding** or **learned dense vectors**.
+- This visualization helps illustrate how **nodes with similar local neighborhoods** are assigned similar colors (i.e., labels).
 
 Graph visualization is saved in `/outputs/graph_<method>_<timestamp>.png`.
 
